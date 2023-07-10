@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF692C952A49FD630050FA60 /* OpenAPIPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF692C942A49FD630050FA60 /* OpenAPIPlaygroundApp.swift */; };
+		CF692C972A49FD630050FA60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF692C962A49FD630050FA60 /* ContentView.swift */; };
+		CF692C992A49FD630050FA60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF692C982A49FD630050FA60 /* Assets.xcassets */; };
+		CF692C9C2A49FD630050FA60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF692C9B2A49FD630050FA60 /* Preview Assets.xcassets */; };
+		CF692CB02A4A03380050FA60 /* openapi-generator-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = CF692CAF2A4A03380050FA60 /* openapi-generator-config.yaml */; };
+		CF692CB22A4A03490050FA60 /* openapi.yaml in Resources */ = {isa = PBXBuildFile; fileRef = CF692CB12A4A03490050FA60 /* openapi.yaml */; };
+		CF692CBA2A4A08510050FA60 /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = CF692CB92A4A08510050FA60 /* OpenAPIURLSession */; };
+		CF692CBD2A4A08600050FA60 /* OpenAPIRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = CF692CBC2A4A08600050FA60 /* OpenAPIRuntime */; };
+		CF692CC02A4A1AA60050FA60 /* GreetingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF692CBF2A4A1AA60050FA60 /* GreetingClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF692C912A49FD630050FA60 /* OpenAPIPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenAPIPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF692C942A49FD630050FA60 /* OpenAPIPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAPIPlaygroundApp.swift; sourceTree = "<group>"; };
+		CF692C962A49FD630050FA60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF692C982A49FD630050FA60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF692C9B2A49FD630050FA60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF692CAF2A4A03380050FA60 /* openapi-generator-config.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "openapi-generator-config.yaml"; sourceTree = "<group>"; };
+		CF692CB12A4A03490050FA60 /* openapi.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
+		CF692CBF2A4A1AA60050FA60 /* GreetingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF692C8E2A49FD630050FA60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF692CBD2A4A08600050FA60 /* OpenAPIRuntime in Frameworks */,
+				CF692CBA2A4A08510050FA60 /* OpenAPIURLSession in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF692C882A49FD620050FA60 = {
+			isa = PBXGroup;
+			children = (
+				CF692C932A49FD630050FA60 /* OpenAPIPlayground */,
+				CF692C922A49FD630050FA60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF692C922A49FD630050FA60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF692C912A49FD630050FA60 /* OpenAPIPlayground.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF692C932A49FD630050FA60 /* OpenAPIPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				CF692C942A49FD630050FA60 /* OpenAPIPlaygroundApp.swift */,
+				CF692C962A49FD630050FA60 /* ContentView.swift */,
+				CF692C982A49FD630050FA60 /* Assets.xcassets */,
+				CF692C9A2A49FD630050FA60 /* Preview Content */,
+				CF692CAF2A4A03380050FA60 /* openapi-generator-config.yaml */,
+				CF692CB12A4A03490050FA60 /* openapi.yaml */,
+				CF692CBF2A4A1AA60050FA60 /* GreetingClient.swift */,
+			);
+			path = OpenAPIPlayground;
+			sourceTree = "<group>";
+		};
+		CF692C9A2A49FD630050FA60 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF692C9B2A49FD630050FA60 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF692C902A49FD630050FA60 /* OpenAPIPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF692C9F2A49FD630050FA60 /* Build configuration list for PBXNativeTarget "OpenAPIPlayground" */;
+			buildPhases = (
+				CF692C8D2A49FD630050FA60 /* Sources */,
+				CF692C8E2A49FD630050FA60 /* Frameworks */,
+				CF692C8F2A49FD630050FA60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF692CAE2A4A02740050FA60 /* PBXTargetDependency */,
+			);
+			name = OpenAPIPlayground;
+			packageProductDependencies = (
+				CF692CB92A4A08510050FA60 /* OpenAPIURLSession */,
+				CF692CBC2A4A08600050FA60 /* OpenAPIRuntime */,
+			);
+			productName = OpenAPIPlayground;
+			productReference = CF692C912A49FD630050FA60 /* OpenAPIPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF692C892A49FD620050FA60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					CF692C902A49FD630050FA60 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CF692C8C2A49FD620050FA60 /* Build configuration list for PBXProject "OpenAPIPlayground" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF692C882A49FD620050FA60;
+			packageReferences = (
+				CF692CB72A4A08370050FA60 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */,
+				CF692CB82A4A08510050FA60 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
+				CF692CBB2A4A08600050FA60 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */,
+			);
+			productRefGroup = CF692C922A49FD630050FA60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF692C902A49FD630050FA60 /* OpenAPIPlayground */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF692C8F2A49FD630050FA60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF692C9C2A49FD630050FA60 /* Preview Assets.xcassets in Resources */,
+				CF692CB22A4A03490050FA60 /* openapi.yaml in Resources */,
+				CF692C992A49FD630050FA60 /* Assets.xcassets in Resources */,
+				CF692CB02A4A03380050FA60 /* openapi-generator-config.yaml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF692C8D2A49FD630050FA60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF692C972A49FD630050FA60 /* ContentView.swift in Sources */,
+				CF692C952A49FD630050FA60 /* OpenAPIPlaygroundApp.swift in Sources */,
+				CF692CC02A4A1AA60050FA60 /* GreetingClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF692CAE2A4A02740050FA60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = CF692CAD2A4A02740050FA60 /* OpenAPIGenerator */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CF692C9D2A49FD630050FA60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF692C9E2A49FD630050FA60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF692CA02A49FD630050FA60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OpenAPIPlayground/Preview Content\"";
+				DEVELOPMENT_TEAM = U7P37PRGMT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MaciejLipiec.OpenAPIPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF692CA12A49FD630050FA60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OpenAPIPlayground/Preview Content\"";
+				DEVELOPMENT_TEAM = U7P37PRGMT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MaciejLipiec.OpenAPIPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF692C8C2A49FD620050FA60 /* Build configuration list for PBXProject "OpenAPIPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF692C9D2A49FD630050FA60 /* Debug */,
+				CF692C9E2A49FD630050FA60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF692C9F2A49FD630050FA60 /* Build configuration list for PBXNativeTarget "OpenAPIPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF692CA02A49FD630050FA60 /* Debug */,
+				CF692CA12A49FD630050FA60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF692CA22A4A00D70050FA60 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-generator.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		CF692CB72A4A08370050FA60 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-generator.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+		CF692CB82A4A08510050FA60 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-urlsession";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+		CF692CBB2A4A08600050FA60 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-runtime";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF692CAD2A4A02740050FA60 /* OpenAPIGenerator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF692CA22A4A00D70050FA60 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */;
+			productName = "plugin:OpenAPIGenerator";
+		};
+		CF692CB92A4A08510050FA60 /* OpenAPIURLSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF692CB82A4A08510050FA60 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */;
+			productName = OpenAPIURLSession;
+		};
+		CF692CBC2A4A08600050FA60 /* OpenAPIRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF692CBB2A4A08600050FA60 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */;
+			productName = OpenAPIRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CF692C892A49FD620050FA60 /* Project object */;
+}

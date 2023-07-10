@@ -1,0 +1,27 @@
+openapi: '3.0.3'
+info:
+  title: Cat Fact API
+  version: 1.0.0
+servers:
+  - url: https://catfact.ninja
+    description: Cat Fact API server
+paths:
+  /fact:
+    get:
+      operationId: getFact
+      responses:
+        '200':
+          description: A success response with a cat fact.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Fact'
+components:
+  schemas:
+    Fact:
+      type: object
+      properties:
+        fact:
+          type: string
+        length:
+          type: integer
