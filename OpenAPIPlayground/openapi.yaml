@@ -16,6 +16,23 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Fact'
+  /:
+    get:
+      operationId: getAge
+      parameters:
+      - name: name
+        required: true
+        in: query
+        description: The name used to guess users age
+        schema:
+          type: string
+      responses:
+        '200':
+          description: A succed response with age
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Age'
 components:
   schemas:
     Fact:
@@ -25,3 +42,13 @@ components:
           type: string
         length:
           type: integer
+    Age:
+      type: object
+      properties:
+        count:
+          type: integer
+        name:
+          type: string
+        age:
+          type: integer
+      
